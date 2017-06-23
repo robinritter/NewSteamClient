@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SteamBibliothek.Model
+namespace SteamBibliothek
 {
     public class Spiel
     {
@@ -40,3 +40,4 @@ namespace SteamBibliothek.Model
         }
     }
 }
+

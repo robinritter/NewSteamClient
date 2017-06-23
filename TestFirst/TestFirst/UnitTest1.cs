@@ -7,10 +7,11 @@ namespace TestFirst
     public class UnitTest1
     {
         [TestMethod]
-        [ExpectedException(typeof(NotImplementedException))]
+       
         public void TestMethodSpielhinzufügen()
         {
             Controller controller = new Controller();
+            controller.Spiellisteerstellen();
             string Titel = "Master of Moodle";
             string Datum = "01.01.1999";
             string Zuletztgespielt = "14.06.2017";
@@ -43,13 +44,6 @@ namespace TestFirst
             
             Controller controller = new Controller();
             controller.Datenladen();
-        }
-        [TestMethod]
-        [ExpectedException(typeof(NotImplementedException))]
-        public void TestMethodDatenschreiben()
-        {
-            Controller controller = new Controller();
-            controller.Datenschreiben();
         }
     }
 }
