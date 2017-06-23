@@ -20,13 +20,26 @@ namespace SteamBibliothek
             Controller controller = new Controller();
             controller.Datenladen();
             Button button = new Button();
-            int x = 0;
-            int y = 0;
+
+            int x = 50;
+            int y = 50;
             foreach(Spiel spiel in spieliste)
             {
                 button.Name = spiel.Titel;
-                button.Location= 
-
+                button.Location = new Point(x, y);
+                button.Visible = true;
+                button.AutoSize = true;
+                button.Click += (sender, args) =>
+                    {
+                        MessageBox.Show(spiel.Titel + "/n" + Convert.ToString(spiel.InstallationsDatum) + "/n" + spiel.Publisher + "/n" + spiel.Kategorie + "/n" + Convert.ToString(spiel.USK) + "/n" + Convert.ToString(spiel.zuletzt_gespielt));
+                    };
+                button.DoubleClick += (sender, args) =>
+                    {
+                        controller.SpielStarten(spiel.Titel);
+                    };
+                x = x + 50;
+                y = y + 50;
+                //button.BackgroundImage = hier kommt dann das Bild rein der exe
             }
             
 
