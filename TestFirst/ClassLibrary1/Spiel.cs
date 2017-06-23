@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SteamBibliothek.Model
 {
-    class Spiel
+    public class Spiel
     {
         public string Titel
         {

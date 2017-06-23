@@ -34,12 +34,13 @@ namespace TestFirst
         {
             Controller controller = new Controller();
             string Titel = "Master of Moodle";
-            controller.Spielstarten(Titel);
+            controller.SpielStarten(Titel);
         }
         [TestMethod]
         [ExpectedException(typeof(NotImplementedException))]
         public void TestMethodDatenladen()
         {
+            
             Controller controller = new Controller();
             controller.Datenladen();
         }
