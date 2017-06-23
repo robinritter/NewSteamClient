@@ -22,7 +22,6 @@ namespace TestFirst
             
         }
         [TestMethod]
-        [ExpectedException(typeof(NotImplementedException))]
         public void TestMethodSpielentfernen()
         {
             Controller controller = new Controller();
@@ -30,7 +29,6 @@ namespace TestFirst
             controller.Spielentfernen(Titel);
         }
         [TestMethod]
-        [ExpectedException(typeof(NotImplementedException))]
         public void TestMethodProgrammstarten()
         {
             Controller controller = new Controller();
@@ -38,10 +36,8 @@ namespace TestFirst
             controller.SpielStarten(Titel);
         }
         [TestMethod]
-        [ExpectedException(typeof(NotImplementedException))]
         public void TestMethodDatenladen()
         {
-            
             Controller controller = new Controller();
             controller.Datenladen();
         }
