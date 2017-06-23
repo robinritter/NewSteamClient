@@ -29,7 +29,7 @@ namespace SteamBibliothek
                 button.Location = new Point(x, y);
                 button.Visible = true;
                 button.AutoSize = true;
-                button.Click += (sender, args) =>
+                button.MouseDown += (sender, args) =>
                     {
                         MessageBox.Show(spiel.Titel + "/n" + Convert.ToString(spiel.InstallationsDatum) + "/n" + spiel.Publisher + "/n" + spiel.Kategorie + "/n" + Convert.ToString(spiel.USK) + "/n" + Convert.ToString(spiel.zuletzt_gespielt));
                     };
