@@ -14,9 +14,10 @@ namespace SteamProgramm
         [STAThread]
         static void Main()
         {
+            Form oberfläche = new Oberfläche();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Oberfläche());
+            Application.Run(oberfläche);
         }
     }
 }

@@ -18,9 +18,7 @@ namespace SteamBibliothek
             List<Spiel> spieliste = new List<Spiel>();
             InitializeComponent();
             Controller controller = new Controller();
-            controller.Datenladen();
             Button button = new Button();
-
             int x = 50;
             int y = 50;
             foreach(Spiel spiel in spieliste)
@@ -41,7 +39,7 @@ namespace SteamBibliothek
                 y = y + 50;
                 //button.BackgroundImage = hier kommt dann das Bild rein der exe
             }
-            
+            controller.Datenladen();
 
         }
 

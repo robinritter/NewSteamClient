@@ -57,7 +57,7 @@ namespace SteamBibliothek
         public void Datenladen()
         {
             XmlDocument xdoc = new XmlDocument();
-            xdoc.Load("SpielListe.xml");
+            xdoc.Load("SpielListe.xml");                                        //Dateipfad ist nicht korrekt
             XmlNodeList SpielNodeList = xdoc.SelectNodes("//SpielListe/Spiel");
             List<Spiel> spiel = new List<Spiel>();
             foreach(XmlNode SpielNode in SpielNodeList)
